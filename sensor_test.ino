@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include "libraries/sensor/Sensor.h"
+#include <Sensor.h>
 
 Sensor sensor(13);
 
