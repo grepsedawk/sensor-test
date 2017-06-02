@@ -3,7 +3,7 @@
 #include <Timer.h>
 
 Timer t;
-Sensor temp(A0, 515, 240, 70, 98);
+Sensor temperature(A0, 515, 240, 70, 98);
 
 void setup() {
   Serial.begin(9600);
@@ -15,5 +15,5 @@ void loop() {
 }
 
 void print_temp() {
-  Serial.println(temp.value());
+  Serial.println(temperature.value());
 }
