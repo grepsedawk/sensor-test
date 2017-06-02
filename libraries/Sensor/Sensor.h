@@ -9,11 +9,15 @@
 
 class Sensor {
 public:
-    Sensor(int pin);
-    void dot();
-    void dash();
+    Sensor(int pin, double min_voltage, double max_voltage, double min_value, double max_value);
+    float value();
+    float map_float(float x, float in_min, float in_max, float out_min, float out_max);
 private:
-    int _pin;
+    int pin;
+    double min_voltage;
+    double max_voltage;
+    double min_value;
+    double max_value;
 };
 
 
